@@ -1,9 +1,8 @@
 const express = require('express');
-//Create an Express Application using the Exress Module
 const app = express();
 const port = 3000;
 
-//Get request that includes the path to get the response back from the server
+//Get request to fetch the response from the server
 app.get('/', (req, res) => {
     res.send(`
         <!DOCTYPE html>
@@ -40,14 +39,14 @@ app.get('/', (req, res) => {
             </style>
         </head>
         <body>
-            <h1>Welcome to My Simple Js Landing Page</h1>
-            <p>Discover amazing things here!</p>
-            <button id="ctaButton">Click Me!</button>
+            <h1>Welcome to My Simple NodeJs Landing Page</h1>
+            <p>Karibu Sana</p>
+            <button id="ctaButton">Click Me</button>
         
             <script>
                 // JavaScript functionality
                 document.getElementById('ctaButton').addEventListener('click', function() {
-                    alert('Button Clicked! Feel free to add more functionality.');
+                    alert('Button Clicked!');
                 });
             </script>
         </body>
@@ -56,6 +55,6 @@ app.get('/', (req, res) => {
 });
 
 //Port to be used
-app.listen(port, function () {
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(port, () => {
+    console.log(`The node application is listening on port http://localhost:${port}`);
 });

@@ -1,12 +1,13 @@
 FROM node:21-alpine
 
-COPY package.json /app/
-COPY src /app/
-
 WORKDIR /app
+
+COPY . /app
+
+COPY src /app
 
 RUN npm install
 
 EXPOSE 3000
 
-CMD [ "node", "server.js" ]
+CMD node index.js

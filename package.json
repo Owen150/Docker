@@ -1,7 +1,23 @@
 {
-    "name": "node-app",
-    "version": "1.0",
-    "dependencies": {
-        "express":"4.18.2"
-    }
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "<h1>Project Description</h1>\r This project uses a static node.js webpage to demonstrate docker images and containers.<br>\r <h2>Project Setup Instructions</h2>\r 1. Install the docker engine locally and initiate a docker hub account that you will use to create your pull requests.<br>\r 2. Go to docker hub and search for michaeloduor50/node-app<br>\r 3. A docker pull command will be provided upon clicking <a>michaeloduor50/node-app</a><br>\r 4. With docker installed, paste the docker pull michaeloduor50/node-app:1:0 command into your docker client terminal.<br>\r 5. Create a docker container with the pulled docker image using the command docker run -d -p 30000:3000 node-app:1:0. <br> \r 6. Ensure your container is running by checking the logs using docker logs node-app:1.0<br>\r 7. Navigate to localhost:3000 to access your web page data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Owen150/Docker.git"
+  },
+  "keywords": [],
+  "author": "Michael Owen Oduor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Owen150/Docker/issues"
+  },
+  "homepage": "https://github.com/Owen150/Docker#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
