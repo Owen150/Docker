@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  nodejs_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodejs_app
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - nodejs_app
