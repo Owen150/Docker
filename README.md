@@ -10,4 +10,10 @@ A list of the required application dependencies that have been bundled together 
 5. With docker installed, paste and run the <b>docker pull michaeloduor50/node-app:1.1.RELEASE</b> command from docker hub in your client terminal. This will pull the specified docker image version to your PC. <br><br>
 6. Create a docker container using the pulled docker image by running the following command: <b>docker run -d --name node-application -p 3000:3000 michaeloduor50/node-app:1.1.RELEASE</b> <br><br> 
 7. Ensure that your container is running as intended by checking the container logs using the command <b>docker logs michaeloduor50/node-app:1.1.RELEASE</b> <br><br>
-8. Finally, navigate to http://localhost:3000 to access the web page data on your PC as the containerized application is configured to listen to localhost port 3000.
+8. Finally, navigate to http://localhost:3000 to access the web page data on your PC as the containerized application is configured to listen to localhost port 3000.<br>
+<h2>Task Two</h2>
+1. Open docker hub on https://hub.docker.com/ and search for the <b>michaeloduor50/nginx-app</b> repository, or use the following link to access the repository: https://hub.docker.com/repository/docker/michaeloduor50/nginx-app/general<br><br>
+2. A docker pull command will be provided upon selecting the node-app repository with the specified docker image tag/version i.e. <b>michaeloduor50/nginx-app:1.1</b> <br><br>
+3. With docker installed, paste and run the <b>docker pull michaeloduor50/nginx-app:1.1</b> command from docker hub in your client terminal. This will pull the specified docker image version to your PC. <br><br>
+4. Create a docker container using the pulled docker image by running the following command: <b>docker run -d -p 9000:80 -p 9001:443 <your build name of choice></b> <br><br> 
+5. Finally, access the served page through ports: http://localhost:9000/ and https://localhost:9001/
